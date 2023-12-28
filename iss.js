@@ -13,6 +13,7 @@ const fetchMyIP = function (callback) {
       callback(Error(msg), null);
       return;
     }
+
     if (body) {
       const data = JSON.parse(body);
       callback(null, data.ip);
